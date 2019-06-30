@@ -37,6 +37,7 @@ public class BlogControl {
         FreemarkeView freemarkeView = new FreemarkeView("docList.ftl");
         freemarkeView.setModel("authorName", author);
         freemarkeView.setModel("docs", result);
+        System.out.println(result);
         return freemarkeView;
     }
 
