@@ -19,6 +19,7 @@ public class BlogControl {
         FreemarkeView freemarkeView = new FreemarkeView("edit.ftl");
         freemarkeView.setModel("authorName", user);
         freemarkeView.setModel("user", user);
+        System.out.println(hashCode());
         return freemarkeView;
     }
 
